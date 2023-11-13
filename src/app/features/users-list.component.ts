@@ -5,14 +5,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-users-list',
   standalone: true,
   imports: [CommonModule],
-  template: `
-    <p>
-      users-list works!
-    </p>
-  `,
-  styles: [
-  ]
+  template: ` <p>users-list works!</p> `,
+  styles: [],
 })
-export class UsersListComponent {
-
-}
+export class UsersListComponent {}

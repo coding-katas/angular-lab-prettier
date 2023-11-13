@@ -5,14 +5,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-product-view',
   standalone: true,
   imports: [CommonModule],
-  template: `
-    <p>
-      product-view works!
-    </p>
-  `,
-  styles: [
-  ]
+  template: ` <p>product-view works!</p> `,
+  styles: [],
 })
-export class ProductViewComponent {
-
-}
+export class ProductViewComponent {}
