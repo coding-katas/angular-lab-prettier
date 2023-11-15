@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular16-lab": {
+    "angular-lab": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -43,7 +43,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular16-lab",
+            "outputPath": "dist/angular-lab",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -90,10 +90,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular16-lab:build:production"
+              "buildTarget": "angular-lab:build:production"
             },
             "development": {
-              "buildTarget": "angular16-lab:build:development"
+              "buildTarget": "angular-lab:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -101,7 +101,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "angular16-lab:build"
+            "buildTarget": "angular-lab:build"
           }
         },
         "test": {

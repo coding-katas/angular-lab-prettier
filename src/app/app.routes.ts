@@ -5,17 +5,17 @@ export const routes: Routes = [
   {
     path: 'home',
     loadComponent: () =>
-      import('./features/home.component').then(c => c.HomeComponent),
+      import('./core/home/home.component').then(c => c.HomeComponent),
   },
   {
     path: 'products',
     loadChildren: () =>
-      import('./features/products.routes').then(r => r.ROUTES_PRODUCTS),
+      import('./products/products.routes').then(r => r.ROUTES_PRODUCTS),
   },
   {
     path: 'users-list',
     loadComponent: () =>
-      import('./features/users-list.component').then(c => c.UsersListComponent),
+      import('./users/users-list/users-list.component').then(c => c.UsersListComponent),
   },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];

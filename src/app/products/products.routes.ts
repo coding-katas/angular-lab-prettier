@@ -5,6 +5,8 @@ export const ROUTES_PRODUCTS: Routes = [
   {
     path: '',
     loadComponent: () =>
-      import('./product-view.component').then(c => c.ProductViewComponent),
+      import('./product-view/product-view.component').then(
+        c => c.ProductViewComponent,
+      ),
   },
 ];

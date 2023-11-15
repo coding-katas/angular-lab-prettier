@@ -22,7 +22,7 @@
         "editor.formatOnSave": false
       },
       "files.autoSave": "afterDelay",
-      "files.autoSaveDelay": 1000,
+      "files.autoSaveDelay": 3000,
       "eslint.format.enable": true
 
     }
